@@ -1,0 +1,133 @@
+*{
+	
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+		box-sizing:border-box;
+}
+.container{
+	width: 100%;
+	height: 100vh;
+	background: rgba(15, 26, 61);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+
+
+}
+
+.music-player {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+	text-align: center;
+	padding: 15px;
+	background: #d8b3b3;
+}
+nav{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+
+}
+nav .circle{
+	border-radius: 50px;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	 background: #fff; 
+     color: #991e70;
+    box-shadow: 0 5px 10px rgba(255 ,26 ,26 ,0.22);
+}
+.img-song{
+	width: 220px;
+	border-radius: 50%;
+	border: 8px solid #fff;
+	box-shadow: 0 10px 60px rgba(255 ,26 ,26 ,0.22); 
+}
+.music-player h1{
+	font-size: 20px;
+	font-weight: 400;
+	color: #333;
+	margin-top: 20px;
+}
+.music-player p{
+	font-size: 14px;
+	color: #333;
+}
+#progress{
+  -webkit-appearance:none;
+   width: 100%;
+   height: 6px;
+   background:  #991e70;
+   border-radius: 4px;
+   cursor: pointer;
+   margin: 40px 0;
+}
+#progress::-webkit-slider-thumb{
+	-webkit-appearance:none;
+	background:  #991e70;
+    width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   border: 8px solid #fff;
+   box-shadow: 0 5px 5px rgba(255 ,26 ,26 ,0.22);
+
+}
+.controls{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+.controls div {
+	width: 60px;
+	height: 60px;
+	margin: 20px;
+	background: #fff;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	display: inline-flex;
+	color: #991e70;
+	box-shadow: 0 10px 20px rgba(255 ,26 ,26 ,0.22);
+cursor: pointer;
+
+}
+.controls div:nth-last-child(2){
+	transform: scale(1.5);
+	background: #991e70;
+	color: #fff;
+}
+
+@media (min-width: 768px) {
+    .music-player {
+        max-width: 800px; 
+		padding: 25px 35px; 
+    }
+	.music-player h1 {
+        font-size: 24px; 
+    }
+	.controls {
+        flex-direction: row; 
+        
+    }
+	.controls div{
+		width: 80px; 
+        height: 80px
+	}
+	nav .circle {
+        font-size: 24px; 
+        
+    }
+	#progress::-webkit-slider-thumb{
+		width: 40px; 
+        height: 40px;
+	}
+	#progress{
+		height: 8px;
+	}
+
+}
+
